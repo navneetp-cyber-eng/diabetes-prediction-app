@@ -41,3 +41,14 @@ if st.button("🔍 Predict"):
         st.success(f"✅ Low Risk of Diabetes ({(1-probability)*100:.2f}%)")
 
     st.progress(int(probability * 100))
+st.write("---")
+st.subheader("🧬 Why these factors matter")
+
+st.markdown("""
+- **Glucose**: High levels indicate poor insulin regulation  
+- **BMI**: Higher BMI increases insulin resistance  
+- **Age**: Risk increases with metabolic stress over time  
+- **Insulin**: Indicates how well the body processes glucose  
+""")
+st.write("---")
+st.markdown("Developed by CSE & Biotech Team | ML-Based Early Detection System")
