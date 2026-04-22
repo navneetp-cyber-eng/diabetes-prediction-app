@@ -12,23 +12,49 @@ scaler = joblib.load("scaler.pkl")
 # Custom styling
 st.markdown("""
 <style>
-body {
-    background-color: #f5f7fa;
+/* Main background */
+.stApp {
+    background: linear-gradient(135deg, #e8f1f8, #f9fbfd);
 }
+
+/* Card styling */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+    border: 1px solid #e0e6ed;
+}
+
+/* Title styling */
 .big-title {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: bold;
     color: #0b3c5d;
 }
+
+/* Subtle text */
 .sub-title {
     font-size: 18px;
-    color: #555;
+    color: #5a6a7a;
 }
-.card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+
+/* Buttons */
+.stButton > button {
+    background-color: #0b3c5d;
+    color: white;
+    border-radius: 8px;
+    height: 45px;
+    font-size: 16px;
+}
+
+.stButton > button:hover {
+    background-color: #145374;
+}
+
+/* Progress bar */
+.stProgress > div > div > div > div {
+    background-color: #0b3c5d;
 }
 </style>
 """, unsafe_allow_html=True)
